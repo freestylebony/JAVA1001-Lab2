@@ -27,7 +27,7 @@ public class Convert{
             System.out.println("Enter the current unit of measure: ");
 	   	       myUnit = myObj.next();	    
         
-     if (myUnit == "km") {
+     if (myUnit.equals("km")) {
 
 	   	  /* convert myValue to miles (mi) and 
 	   	   store the new value in myNewValue */
@@ -37,32 +37,32 @@ public class Convert{
             //System.out.println(myNewValue + newUnit);
 	   	    System.out.println(myValue + myUnit +  " is equal to " + myNewValue  + newUnit);
 
-	   }else if (myUnit == "cm") {
+	   }else if (myUnit.equals("cm")) {
 
 	   	 myNewValue = myValue * 0.39;
 	   	 newUnit = "in";
 	   	 System.out.println(myValue + myUnit +  " is equal to " + myNewValue  + newUnit);
 
 
-	   }else if (myUnit == "C") {
+	   }else if (myUnit.equals("C")) {
 
 	   	myNewValue = (myValue * 9/5) + 32;
 	   	newUnit = "F";
 	   	System.out.println(myValue + myUnit +  " is equal to " + myNewValue  + newUnit);
 
-	   }else if (myUnit == "g") {
+	   }else if (myUnit.equals("g")){
 
 	   	myNewValue = myValue * 0.04;
 	   	newUnit = "oz";
 	   	System.out.println(myValue + myUnit +  " is equal to " + myNewValue  + newUnit);
 
-	   }else if (myUnit == "kg") {
+	   }else if (myUnit.equals("kg")) {
 
 	   	myNewValue = myValue * 2.2; 
 	   	newUnit = "lb";
 	   	System.out.println(myValue + myUnit +  " is equal to " + myNewValue  + newUnit);
 
-	   }else if (myUnit == "L") {
+	   }else if (myUnit.equals("L")) {
 
 	   	myNewValue = myValue * 4.17;
 	   	newUnit = "cups";

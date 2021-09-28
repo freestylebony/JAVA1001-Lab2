@@ -20,53 +20,52 @@ public class Convert{
     public static void main(String[] args) {
 
         Scanner myObj = new Scanner(System.in);  // Create a Scanner object
-    	   String myUnit; int myValue; double myNewValue; String newUnit;
+    	   String oldUnit; int oldValue; double newValue; String newUnit;  //Initialize variables
             
              System.out.println("Enter a value to convert: ");
-	   	      myValue = myObj.nextInt();
+	   	      oldValue = myObj.nextInt();
             System.out.println("Enter the current unit of measure: ");
-	   	       myUnit = myObj.next();	    
+	   	       oldUnit = myObj.next();	    
         
-     if (myUnit.equals("km")) {
+     if (oldUnit.equalsIgnoreCase("km")) {
 
-	   	  /* convert myValue to miles (mi) and 
-	   	   store the new value in myNewValue */
+	   	  /* convert oldValue to miles (mi) and 
+	   	   store the new value in newValue */
 
-	   	    myNewValue = myValue * 0.62;
+	   	    newValue = oldValue * 0.62;
 	   	    newUnit = "mi";
-            //System.out.println(myNewValue + newUnit);
-	   	    System.out.println(myValue + myUnit +  " is equal to " + myNewValue  + newUnit);
+	   	    System.out.println(oldValue + oldUnit +  " is equal to " + newValue  + newUnit);
 
-	   }else if (myUnit.equals("cm")) {
+	   }else if (oldUnit.equalsIgnoreCase("cm")) {
 
-	   	 myNewValue = myValue * 0.39;
+	   	 newValue = oldValue * 0.39;
 	   	 newUnit = "in";
-	   	 System.out.println(myValue + myUnit +  " is equal to " + myNewValue  + newUnit);
+	   	 System.out.println(oldValue + oldUnit +  " is equal to " + newValue  + newUnit);
 
 
-	   }else if (myUnit.equals("C")) {
+	   }else if (oldUnit.equalsIgnoreCase("C")) {
 
-	   	myNewValue = (myValue * 9/5) + 32;
+	   	newValue = (oldValue * 9/5) + 32;
 	   	newUnit = "F";
-	   	System.out.println(myValue + myUnit +  " is equal to " + myNewValue  + newUnit);
+	   	System.out.println(oldValue + oldUnit +  " is equal to " + newValue  + newUnit);
 
-	   }else if (myUnit.equals("g")){
+	   }else if (oldUnit.equalsIgnoreCase("g")){
 
-	   	myNewValue = myValue * 0.04;
+	   	newValue = oldValue * 0.04;
 	   	newUnit = "oz";
-	   	System.out.println(myValue + myUnit +  " is equal to " + myNewValue  + newUnit);
+	   	System.out.println(oldValue + oldUnit +  " is equal to " + newValue  + newUnit);
 
-	   }else if (myUnit.equals("kg")) {
+	   }else if (oldUnit.equalsIgnoreCase("kg")) {
 
-	   	myNewValue = myValue * 2.2; 
+	   	newValue = oldValue * 2.2; 
 	   	newUnit = "lb";
-	   	System.out.println(myValue + myUnit +  " is equal to " + myNewValue  + newUnit);
+	   	System.out.println(oldValue + oldUnit +  " is equal to " + newValue  + newUnit);
 
-	   }else if (myUnit.equals("L")) {
+	   }else if (oldUnit.equalsIgnoreCase("L")) {
 
-	   	myNewValue = myValue * 4.17;
+	   	newValue = oldValue * 4.17;
 	   	newUnit = "cups";
-	   	System.out.println(myValue + myUnit +  " is equal to " + myNewValue  + newUnit);
+	   	System.out.println(oldValue + oldUnit +  " is equal to " + newValue  + newUnit);
 
 	   }else {
   
